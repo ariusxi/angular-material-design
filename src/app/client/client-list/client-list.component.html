@@ -1,0 +1,14 @@
+<mat-accordion *ngIf="clientsList.length > 0">
+    <mat-expansion-panel *ngFor="let currentClient of clientsList">
+        <mat-expansion-panel-header>
+            {{currentClient.name}}
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+            <p>{{currentClient.email}}</p>
+            <p>{{currentClient.telephone}}</p>
+        </ng-template>
+    </mat-expansion-panel>
+</mat-accordion>
+<p class="mat-body-1 text-center" *ngIf="clientsList.length == 0">
+    Nenhum cliente cadastrado
+</p>

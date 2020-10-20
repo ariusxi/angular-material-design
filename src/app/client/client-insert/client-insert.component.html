@@ -1,0 +1,35 @@
+<mat-card>
+    <h2 class="text-center">Inserção de Clientes</h2>
+    <mat-form-field>
+        <input
+            [(ngModel)]="name"
+            matInput
+            type="text"
+            placeholder="Nome"
+            name="name" />
+    </mat-form-field>
+    <mat-form-field>
+        <input
+            [(ngModel)]="email"
+            matInput
+            type="email"
+            placeholder="Email"
+            name="email" />
+    </mat-form-field>
+    <mat-form-field>
+        <input
+            [(ngModel)]="telephone"
+            matInput
+            type="text"
+            placeholder="Telefone"
+            name="telephone" />
+    </mat-form-field>
+    <button
+        mat-raised-button
+        type="submit"
+        color="primary"
+        value="Cadastrar"
+        (click)="onRegisterClient()">
+        Cadastrar
+    </button>
+</mat-card>
